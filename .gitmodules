@@ -1,0 +1,9 @@
+[submodule "postgresql"]
+	path = postgresql
+	url = git://git.postgresql.org/git/postgresql.git
+	branch = REL_12_STABLE
+
+[submodule "pgadmin4"]
+	path = pgadmin4
+	url = git://git.postgresql.org/git/pgadmin4.git
+	branch = master
