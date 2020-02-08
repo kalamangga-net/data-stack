@@ -7,3 +7,7 @@
 	path = pgadmin4
 	url = git://git.postgresql.org/git/pgadmin4.git
 	branch = master
+[submodule "pentaho-di"]
+	path = pentaho-kettle
+	url = https://github.com/pentaho/pentaho-kettle
+	branch = 8.3.0.8
