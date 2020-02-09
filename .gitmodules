@@ -1,13 +1,17 @@
 [submodule "postgresql"]
-	path = postgresql
+	path = oltp/postgresql
 	url = git://git.postgresql.org/git/postgresql.git
 	branch = REL_12_STABLE
 
 [submodule "pgadmin4"]
-	path = pgadmin4
+	path = oltp/pgadmin4
 	url = git://git.postgresql.org/git/pgadmin4.git
 	branch = master
 [submodule "pentaho-di"]
-	path = pentaho-kettle
+	path = integration/pentaho-kettle
 	url = https://github.com/pentaho/pentaho-kettle
 	branch = 8.3.0.8
+[submodule "olap/ClickHouse"]
+	path = olap/ClickHouse
+	url = https://github.com/ClickHouse/ClickHouse.git
+	branch = 20.1
