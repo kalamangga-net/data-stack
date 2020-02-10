@@ -2,8 +2,21 @@
 
 Our Data Stack architecture
 
-## Perangkat
+## On-line Transactional Processing
 
 * PostgreSQL
 * PgAdmin4
+
+## Data Integration
+
 * Pentaho-Kettle
+* WebSpoon
+
+## On-line Analytical Processing
+
+* Apache Superset
+
+## Graph
+
+* Neo4j
+

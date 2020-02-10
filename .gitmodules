@@ -15,3 +15,15 @@
 	path = olap/ClickHouse
 	url = https://github.com/ClickHouse/ClickHouse.git
 	branch = 20.1
+[submodule "business-intelligence/superset"]
+	path = business-intelligence/superset
+	url = https://github.com/apache/incubator-superset.git
+	branch = 0.36
+[submodule "graph/neo4j"]
+	path = graph/neo4j
+	url = https://github.com/neo4j/neo4j.git
+	branch = 4.0
+[submodule "integration/webspoon"]
+	path = integration/webspoon
+	url = https://github.com/HiromuHota/pentaho-kettle.git
+	branch = webspoon-8.3
