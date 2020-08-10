@@ -1,29 +1,29 @@
 [submodule "postgresql"]
 	path = oltp/postgresql
 	url = git://git.postgresql.org/git/postgresql.git
-	branch = REL_12_STABLE
+	branch = REL_12_3
 
 [submodule "pgadmin4"]
 	path = oltp/pgadmin4
 	url = git://git.postgresql.org/git/pgadmin4.git
-	branch = master
+	branch = 4_24
 [submodule "pentaho-di"]
 	path = integration/pentaho-kettle
 	url = https://github.com/pentaho/pentaho-kettle
-	branch = 8.3.0.8
+	branch = 9.0.0.6
 [submodule "olap/ClickHouse"]
 	path = olap/ClickHouse
 	url = https://github.com/ClickHouse/ClickHouse.git
-	branch = 20.1
+	branch = 20.6
 [submodule "business-intelligence/superset"]
 	path = business-intelligence/superset
 	url = https://github.com/apache/incubator-superset.git
-	branch = 0.36
+	branch = 0.37
 [submodule "graph/neo4j"]
 	path = graph/neo4j
 	url = https://github.com/neo4j/neo4j.git
-	branch = 4.0
+	branch = 4.2
 [submodule "integration/webspoon"]
 	path = integration/webspoon
 	url = https://github.com/HiromuHota/pentaho-kettle.git
-	branch = webspoon-8.3
+	branch = webspoon-9.0
