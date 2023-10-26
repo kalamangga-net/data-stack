@@ -1,7 +1,7 @@
 FROM kalamangga/hadoop-base:3.3.6
 
-ARG USERNAME=jupyter
-ARG GROUPNAME=jupyter
+ARG USERNAME=hdfs
+ARG GROUPNAME=hdfs
 ARG UID=1001
 ARG GID=1001
 USER $USERNAME

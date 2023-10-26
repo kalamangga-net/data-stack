@@ -1,5 +1,7 @@
-all: build tag push
+all: pull build tag push
 
+pull:
+	docker pull kalamangga/debian:bullseye
 build:
 	docker build -t kalamangga/hadoop-base:latest --rm .
 tag:

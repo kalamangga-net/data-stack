@@ -1,4 +1,4 @@
-FROM kalamangga/debian:11
+FROM kalamangga/debian:bullseye
 RUN apt -qq update && \
     DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
       sudo \
@@ -13,8 +13,8 @@ RUN apt -qq update && \
       libc6-dev && \
     rm -rf /var/lib/apt/lists/*
 
-ARG USERNAME=jupyter
-ARG GROUPNAME=jupyter
+ARG USERNAME=hdfs
+ARG GROUPNAME=hdfs
 ARG UID=1001
 ARG GID=1001
 

@@ -1,0 +1,3 @@
+CREATE DATABASE "metastore";
+CREATE USER hdfs WITH ENCRYPTED PASSWORD 'hdfs';
+GRANT ALL ON DATABASE metastore TO hdfs;
