@@ -14,9 +14,11 @@ Our Data Stack architecture
 
 ## On-line Analytical Processing
 
+* ClickHouse
 * Apache Superset
 
-## Graph
+## Platform
 
-* Neo4j
+* Hadoop (Dockerize)
+* Spark (Dockerize)
 
