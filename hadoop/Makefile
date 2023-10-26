@@ -8,3 +8,8 @@ all: 0base 1hive 2master 3worker
 	cd master && $(MAKE)
 3worker:
 	cd worker && $(MAKE)
+deploy:
+	docker pull kalamangga/hadoop-master
+	docker pull kalamangga/hadoop-worker
+	docker-compose up
+	docker ps -a
