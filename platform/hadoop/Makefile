@@ -11,5 +11,5 @@ all: 0base 1hive 2master 3worker
 deploy:
 	docker pull kalamangga/hadoop-master
 	docker pull kalamangga/hadoop-worker
-	docker-compose up
+	docker compose up
 	docker ps -a
