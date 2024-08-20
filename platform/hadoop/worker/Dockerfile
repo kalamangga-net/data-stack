@@ -1,7 +1,8 @@
 FROM kalamangga/hadoop-hive:3.1.3
-ENV DATADIR=/opt/hadoop/dfs/data
-RUN mkdir -p /opt/hadoop/dfs/data
-VOLUME /opt/hadoop/dfs/data
+ARG WORKDIR=/opt/bigdata
+ENV DATADIR=$WORKDIR/data
+RUN mkdir -p $WORKDIR/data
+VOLUME $WORKDIR/data
 COPY run.sh /usr/local/sbin/run.sh
 RUN sudo chmod a+x /usr/local/sbin/run.sh
 CMD ["run.sh"]
