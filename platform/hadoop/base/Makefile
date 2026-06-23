@@ -5,7 +5,7 @@ pull:
 build:
 	docker build -t kalamangga/hadoop-base:latest --rm .
 tag:
-	docker tag kalamangga/hadoop-base:latest kalamangga/hadoop-base:3.3.6
+	docker tag kalamangga/hadoop-base:latest kalamangga/hadoop-base:3.4.3
 push:
 	docker push kalamangga/hadoop-base:latest
-	docker push kalamangga/hadoop-base:3.3.6
+	docker push kalamangga/hadoop-base:3.4.3

@@ -1,5 +1,6 @@
 FROM kalamangga/debian:bullseye
-RUN apt-get install -y gnupg procps coreutils libc6-dev && apt-get clean
+RUN apt update && apt upgrade -y && apt clean
+RUN apt-get install -y sudo gnupg procps coreutils libc6-dev && apt-get clean
 RUN apt-get install -y openjdk-11-jdk && apt-get clean
 RUN apt-get install -y python3 python3-pip python-is-python3 && \
     rm -rf /var/lib/apt/lists/*
@@ -18,11 +19,11 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 # Hadoop
-ARG HADOOP_VER=3.3.6
+ARG HADOOP_VER=3.4.3
 ARG HADOOP_URL=https://repo.kalamangga.net/apache/hadoop/hadoop-$HADOOP_VER.tar.gz
 ENV HADOOP_HOME=$WORKDIR/hadoop-$HADOOP_VER
 
-COPY hadoop-3.3.6.tar.gz /opt/bigdata
+COPY hadoop-$HADOOP_VER.tar.gz /opt/bigdata
 WORKDIR $WORKDIR
 RUN set -x && tar -xf hadoop-$HADOOP_VER.tar.gz && mkdir $HADOOP_HOME/logs && rm $WORKDIR/hadoop*.gz \
  && chown $USERNAME:$GROUPNAME -R $HADOOP_HOME
