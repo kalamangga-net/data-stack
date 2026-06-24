@@ -1,4 +1,4 @@
-HADOOP_VERSION=3.4.3
+HADOOP_VERSION ?= 3.4.3
 HADOOP_TARBALL=hadoop-$(HADOOP_VERSION).tar.gz
 HADOOP_URL=https://archive.apache.org/dist/hadoop/common/hadoop-$(HADOOP_VERSION)/$(HADOOP_TARBALL)
 

@@ -1,4 +1,5 @@
-FROM kalamangga/hadoop-base:3.3.6
+ARG HADOOP_VERSION=3.3.6
+FROM kalamangga/hadoop-base:${HADOOP_VERSION}
 HEALTHCHECK CMD curl -f http://localhost:8188/ || exit 1
 ENV YARN_CONF_yarn_timeline___service_leveldb___timeline___store_path=/data/yarn/timeline
 RUN sudo mkdir -p /data/yarn/timeline
