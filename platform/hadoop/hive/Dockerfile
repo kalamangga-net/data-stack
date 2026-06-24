@@ -1,4 +1,5 @@
-FROM kalamangga/hadoop-base:3.4.3
+ARG HADOOP_VERSION=3.4.3
+FROM kalamangga/hadoop-base:${HADOOP_VERSION}
 
 ARG USERNAME=hdfs
 ARG GROUPNAME=hdfs
@@ -9,7 +10,7 @@ ARG WORKDIR=/opt/bigdata
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 # Hive
-ARG HIVE_VERSION=4.0.1
+ARG HIVE_VERSION
 ENV HIVE_HOME=/opt/bigdata/apache-hive-$HIVE_VERSION-bin
 
 COPY --chown=$USERNAME:$GROUPNAME apache-hive-$HIVE_VERSION-bin.tar.gz $WORKDIR
